@@ -1,0 +1,70 @@
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .producto {
+        width: 25%; /* Ajusta el ancho de los productos para pantallas grandes */
+    }
+
+    .productos {
+        justify-content: space-evenly;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .productos {
+        justify-content: space-evenly;
+    }
+
+    .producto {
+        width: 45%; /* Los productos se muestran en dos columnas */
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .producto {
+        width: 80%; /* Los productos ocupan casi todo el ancho */
+        margin: 20px auto;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
