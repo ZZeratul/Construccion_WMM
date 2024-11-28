@@ -59,12 +59,24 @@ footer {
     padding: 20px;
     margin: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el movimiento */
+}
+
+.producto:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
 }
 
 .producto img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: transform 0.3s ease; /* Transición suave para la imagen */
+}
+
+.producto img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al hacer hover */
 }
 
 .producto h3 {
@@ -83,8 +95,16 @@ footer {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
 .boton:hover {
     background-color: #555;
+    transform: translateY(-5px); /* Mueve el botón hacia arriba */
 }
+
+.boton:active {
+    transform: translateY(2px); /* Efecto de pulsación */
+}
+

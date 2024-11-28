@@ -6,6 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: white;
@@ -13,17 +14,34 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el logo y el texto */
 }
 
+.logo-img {
+    width: 50px; /* Tamaño del logo */
+    height: auto;
+    border-radius: 5px; /* Opcional: bordes redondeados */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -33,14 +51,12 @@ nav ul li a {
     font-size: 16px;
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 /* Product Styles */
@@ -59,6 +75,13 @@ footer {
     padding: 20px;
     margin: 10px;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Añade sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Movimiento suave */
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
 }
 
 .producto img {
@@ -83,6 +106,7 @@ footer {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
 }
 
 .boton:hover {
