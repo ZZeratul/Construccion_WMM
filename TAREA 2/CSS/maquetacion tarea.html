@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos de Maquetación</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    section {
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    h2 {
+      margin-bottom: 10px;
+      text-align: center;
+      color: #005c99;
+    }
+    .bloque {
+      display: block;
+      width: 100%;
+      background-color: lightblue;
+      margin-bottom: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    .inline-bloque {
+      display: inline-block;
+      width: 45%;
+      background-color: lightcoral;
+      margin: 5px;
+      text-align: center;
+      padding: 10px;
+    }
+    .contenedor-flex {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+    }
+    .flex-item {
+      background-color: lightgreen;
+      padding: 20px;
+      flex: 1;
+      text-align: center;
+    }
+    .contenedor-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .grid-item {
+      background-color: lightcoral;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; color:#005c99;">Ejemplos de Maquetación</h1>
+
+  <section>
+    <h2>Bloques</h2>
+    <div class="bloque">Bloque 1</div>
+    <a href="#d" class="bloque">Bloque 2</a>
+  </section>
+
+  <section>
+    <h2>Bloques en Línea</h2>
+    <div class="inline-bloque">Bloque 1</div>
+    <div class="inline-bloque">Bloque 2</div>
+  </section>
+
+  <section>
+    <h2>Flexbox</h2>
+    <div class="contenedor-flex">
+      <div class="flex-item">Elemento 1</div>
+      <div class="flex-item">Elemento 2</div>
+      <div class="flex-item">Elemento 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Grid</h2>
+    <div class="contenedor-grid">
+      <div class="grid-item">Elemento 1</div>
+      <div class="grid-item">Elemento 2</div>
+      <div class="grid-item">Elemento 3</div>
+      <div class="grid-item">Elemento 4</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Maqueta: Block e Inline-Block</h2>
+    <div style="text-align: center; background-color: #005c99; padding: 10px; color: white;">
+      <header style="background-color: white; margin-bottom: 10px; padding: 10px;">TÍTULO WEB</header>
+      <div style="display: inline-block; width: 49%; background-color: white; margin-bottom: 10px;">SIDEBAR</div>
+      <div style="display: inline-block; width: 49%; background-color: white; margin-bottom: 10px;">CONTENT</div>
+      <footer style="background-color: white; margin-top: 10px; padding: 10px;">FOOTER</footer>
+    </div>
+  </section>
+
+  <section>
+    <h2>Maqueta: Flexbox</h2>
+    <div style="display: flex; flex-direction: column; min-height: 300px; background-color: #005c99; color: white;">
+      <header style="background-color: white; padding: 10px;">TÍTULO WEB</header>
+      <div style="display: flex; flex: 1; padding: 10px;">
+        <div style="flex: 1; background-color: white; margin: 10px;">SIDEBAR</div>
+        <div style="flex: 1; background-color: white; margin: 10px;">CONTENT</div>
+      </div>
+      <footer style="background-color: white; padding: 10px;">FOOTER</footer>
+    </div>
+  </section>
+
+  <section>
+    <h2>Maqueta: Grid</h2>
+    <div style="display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: 1fr 1fr; gap: 10px; background-color: #005c99; color: white; padding: 10px;">
+      <header style="grid-column: 1 / -1; background-color: white; padding: 10px;">TÍTULO WEB</header>
+      <div style="background-color: white; padding: 10px;">SIDEBAR</div>
+      <div style="background-color: white; padding: 10px;">CONTENT</div>
+      <footer style="grid-column: 1 / -1; background-color: white; padding: 10px;">FOOTER</footer>
+    </div>
+  </section>
+</body>
+</html>
